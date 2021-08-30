@@ -1,0 +1,10 @@
+{
+    "name": "Miraden",
+    "short_name": "miraden",
+    "theme_color": "#ceac69",
+    "background_color": "#696969",
+    "display": "browser",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+  }

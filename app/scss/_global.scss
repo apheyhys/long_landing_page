@@ -1,0 +1,45 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    background: $color-back;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.wrapper {
+    margin: 0 20px;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1180px;
+}
+
+p {
+    padding-bottom: 24px;
+}

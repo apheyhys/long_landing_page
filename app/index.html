@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miraden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@300;400;500"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="icon" href="/favicon.ico?v=1.0">
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@latest/dist/css/splide-extension-video.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo__img" src="images/logo-img.svg" alt="logo">
+                        </a>
+                        <a class="logo__link" href="#">
+                            <img class="logo__text" src="images/logo-text.svg" alt="logo">
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#facts">О нас</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#reviews">Кейсы</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#tariffs">Тарифы</a>
+                            </li>
+                            <li class="menu__list-item" id="modal-open-link-header">
+                                <a class="menu__link" href="#">Узнать цену заявки</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="social">
+                        <ul class="social__items">
+                            <li class="social__list-item">
+                                <a class="social__link" href="#">WhatsApp</a>
+                            </li>
+                            <li class="social__list-item">
+                                <a class="social__link" href="#">Telegram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="header__top-burger-menu-link" href="#">
+                        <img class="header__top-burger-icon" src="images/icon-burger-menu.svg" alt="burger-menu">
+                    </a>
+                    <nav class="header__top-burger-menu">
+                        <button class="header__top-burger-menu-close-btn">
+                            <img src="images/icon-menu-close.svg" alt="">
+                        </button>
+                        <ul class="header__top-burger-menu-items">
+                            <li class="header__top-burger-menu-item"><a class="header__top-burger-menu-link" href="#facts">
+                                    О нас
+                                </a></li>
+                            <li class="header__top-burger-menu-item"><a class="header__top-burger-menu-link" href="#reviews">
+                                    Кейсы
+                                </a></li>
+                            <li class="header__top-burger-menu-item"><a class="header__top-burger-menu-link" href="#tariffs">
+                                    Тарифы
+                                </a></li>
+                            <li class="header__top-burger-menu-item" id="modal-open-link-burger"><a class="header__top-burger-menu-link" href="#modal-start">
+                                    Узнать цену заявки
+                                </a></li>
+                            <li class="header__top-burger-menu-item"><a class="header__top-burger-menu-link" href="#">
+                                    WhatsApp
+                                </a></li>
+                            <li class="header__top-burger-menu-item"><a class="header__top-burger-menu-link" href="#">
+                                    Telegram
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="applications">
+            <div class="container">
+                <div class="applications__inner">
+                    <div class="applications__invite">
+                        <div class="applications__title">
+                            <h1>
+                            Целевые заявки для продавцов недвижимости из facebook /
+                            instagram
+                            </h1>
+                        </div>
+                        <div class="applications__text">
+                            <p>Настроим для вас рекламу в соц. сетях и обеспечим
+                                потоком целевых заявок. Работаем только с риелторами и застройщиками по всему миру!</p>
+                        </div>
+                        <div>
+                            <div class="modal__wrapper">
+                             
+                                <div class="modal" id="modal-start" style="display: none;">
+                                    <div class="logo modal__logo">
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__img" src="images/logo-img.svg" alt="logo">
+                                        </a>
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__text" src="images/logo-text.svg" alt="logo">
+                                        </a>
+                                    </div>
+                                    <button class="modal__close-btn">
+                                        <img src="images/icon-menu-close.svg" alt="">
+                                    </button>
+    
+                                    <div class="modal__inner">
+                                        <div class="modal__title">
+                                            <h3>Хотите узнать прогноз стоимости целевой заявки?</h3>
+                                        </div>
+                                        <div class="modal__content">
+                                            <p>Перед началом работы мы даем прогноз стоимости целевой заявки. На
+                                                основании
+                                                этой
+                                                информации сможете определить сумму рекламного бюджета в месяц.</p>
+                                            <p>Ответьте на 5 вопросов и укажите свои контакты. Мы свяжемся с вами в
+                                                ближайшие
+                                                сутки и предоставим расчет.</p>
+                                        </div>
+                                        <button class="modal__btn" id="modal-start-link"
+                                            href="#modal-step1">ДАЛЕЕ</button>
+                                    </div>
+                                </div>
+                                <div class="modal" id="modal-step1" style="display: none;">
+                                    <div class="logo modal__logo">
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__img" src="images/logo-img.svg" alt="logo">
+                                        </a>
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__text" src="images/logo-text.svg" alt="logo">
+                                        </a>
+                                    </div>
+                                    <button class="modal__close-btn">
+                                        <img src="images/icon-menu-close.svg" alt="">
+                                    </button>
+                                    <div class="modal__inner">
+                                        <div class="modal__title">
+                                            <h3>Ваш статус на рынке недвижимости?</h3>
+                                        </div>
+                                        <div class="modal__form">
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step1-radio1"
+                                                    name="modal-step1" checked>
+                                                <label class="modal__radio-label" for="modal-step1-radio1">Частный
+                                                    риелтор</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step1-radio2"
+                                                    name="modal-step1">
+                                                <label class="modal__radio-label" for="modal-step1-radio2">Агентство
+                                                    недвижимости</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step1-radio3"
+                                                    name="modal-step1">
+                                                <label class="modal__radio-label"
+                                                    for="modal-step1-radio3">Застройщик</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step1-radio4"
+                                                    name="modal-step1">
+                                                <label class="modal__radio-label" for="modal-step1-radio4">Частный
+                                                    собственник</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step1-radio5"
+                                                    name="modal-step1">
+                                                <label class="modal__radio-label" for="modal-step1-radio5">Другой
+                                                    статус</label>
+                                            </div>
+                                        </div>
+                                        <div class="modal__btn-inner">
+                                            <button class="modal__btn-before" id="modal-step1-before-link"
+                                                href="#modal-start"></button>
+                                            <button class="modal__btn" id="modal-step1-link"
+                                                href="#modal-step2">ДАЛЕЕ</button>
+                                        </div>
+                                        <div class="modal__steps">
+                                            1 <span>/ 5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal" id="modal-step2" style="display: none;">
+                                    <div class="logo modal__logo">
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__img" src="images/logo-img.svg" alt="logo">
+                                        </a>
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__text" src="images/logo-text.svg" alt="logo">
+                                        </a>
+                                    </div>
+                                    <button class="modal__close-btn">
+                                        <img src="images/icon-menu-close.svg" alt="">
+                                    </button>
+                                    <div class="modal__inner">
+                                        <div class="modal__title">
+                                            <h3>Какую аудиторию хотите привлечь?</h3>
+                                        </div>
+                                        <div class="modal__form">
+                                            <div class="modal__checkbox-info">Можно несколько вариантов</div>
+                                            <div class="modal__checkbox-inner">
+                                                <input class="modal__checkbox-btn" type="checkbox"
+                                                    id="modal-step2-check1" name="modal-step2" checked>
+                                                <label class="modal__checkbox-label" for="modal-step2-check1">Прямые
+                                                    покупатели</label>
+                                            </div>
+                                            <div class="modal__checkbox-inner">
+                                                <input class="modal__checkbox-btn" type="checkbox"
+                                                    id="modal-step2-check2" name="modal-step2">
+                                                <label class="modal__checkbox-label"
+                                                    for="modal-step2-check2">Инвесторы</label>
+                                            </div>
+                                            <div class="modal__checkbox-inner">
+                                                <input class="modal__checkbox-btn" type="checkbox"
+                                                    id="modal-step2-check3" name="modal-step2">
+                                                <label class="modal__checkbox-label"
+                                                    for="modal-step2-check3">Собственники недвижимости</label>
+                                            </div>
+                                            <div class="modal__checkbox-inner">
+                                                <input class="modal__checkbox-btn" type="checkbox"
+                                                    id="modal-step2-check4" name="modal-step2">
+                                                <label class="modal__checkbox-label" for="modal-step2-check4">Риелторы /
+                                                    агенты / партнеры</label>
+                                            </div>
+                                            <div class="modal__checkbox-inner">
+                                                <input class="modal__checkbox-btn" type="checkbox"
+                                                    id="modal-step2-check5" name="modal-step2">
+                                                <label class="modal__checkbox-label"
+                                                    for="modal-step2-check5">Арендаторы</label>
+                                            </div>
+                                        </div>
+                                        <div class="modal__btn-inner">
+                                            <button class="modal__btn-before" id="modal-step2-before-link"
+                                                href="#modal-step1"></button>
+                                            <button class="modal__btn" id="modal-step2-link"
+                                                href="#modal-step2">ДАЛЕЕ</button>
+                                        </div>
+                                        <div class="modal__steps">
+                                            2 <span>/ 5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal" id="modal-step3" style="display: none;">
+                                    <div class="logo modal__logo">
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__img" src="images/logo-img.svg" alt="logo">
+                                        </a>
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__text" src="images/logo-text.svg" alt="logo">
+                                        </a>
+                                    </div>
+                                    <button class="modal__close-btn">
+                                        <img src="images/icon-menu-close.svg" alt="">
+                                    </button>
+                                    <div class="modal__inner">
+                                        <div class="modal__title">
+                                            <h3>Какой тип недвижимости?</h3>
+                                        </div>
+                                        <div class="modal__form">
+                                            <div class="modal__radio-top-items">
+                                                <div class="modal__radio-top-item">
+                                                    <input class="modal__radio-top-btn" type="radio"
+                                                        id="modal-step2-top-radio1" name="modal-step2-top" checked>
+                                                    <label class="modal__radio-top-label"
+                                                        for="modal-step2-top-radio1">Вся</label>
+                                                </div>
+                                                <div class="modal__radio-top-item">
+                                                    <input class="modal__radio-top-btn" type="radio"
+                                                        id="modal-step2-top-radio2" name="modal-step2-top">
+                                                    <label class="modal__radio-top-label"
+                                                        for="modal-step2-top-radio2">Новая</label>
+                                                </div>
+                                                <div class="modal__radio-top-item">
+                                                    <input class="modal__radio-top-btn" type="radio"
+                                                        id="modal-step2-top-radio3" name="modal-step2-top">
+                                                    <label class="modal__radio-top-label"
+                                                        for="modal-step2-top-radio3">Вторичная</label>
+                                                </div>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio"
+                                                    id="modal-step2-main-radio1" name="modal-step2-main" checked>
+                                                <label class="modal__radio-label" for="modal-step2-main-radio1">Квартира
+                                                    / Апартаменты</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio"
+                                                    id="modal-step2-main-radio2" name="modal-step2-main">
+                                                <label class="modal__radio-label" for="modal-step2-main-radio2">Дом /
+                                                    Вилла</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio"
+                                                    id="modal-step2-main-radio3" name="modal-step2-main">
+                                                <label class="modal__radio-label"
+                                                    for="modal-step2-main-radio3">Земельный участок</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio"
+                                                    id="modal-step2-main-radio4" name="modal-step2-main">
+                                                <label class="modal__radio-label"
+                                                    for="modal-step2-main-radio4">Коммерческая</label>
+                                            </div>
+                                        </div>
+                                        <div class="modal__btn-inner">
+                                            <button class="modal__btn-before" id="modal-step3-before-link"
+                                                href="#modal-step2"></button>
+                                            <button class="modal__btn" id="modal-step3-link"
+                                                href="#modal-step4">ДАЛЕЕ</button>
+                                        </div>
+                                        <div class="modal__steps">
+                                            3 <span>/ 5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal" id="modal-step4" style="display: none;">
+                                    <div class="logo modal__logo">
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__img" src="images/logo-img.svg" alt="logo">
+                                        </a>
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__text" src="images/logo-text.svg" alt="logo">
+                                        </a>
+                                    </div>
+                                    <button class="modal__close-btn">
+                                        <img src="images/icon-menu-close.svg" alt="">
+                                    </button>
+                                    <div class="modal__inner">
+                                        <div class="modal__title">
+                                            <h3>Какой минимальный бюджет недвижимости?</h3>
+                                        </div>
+                                        <div class="modal__form">
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step4-radio1"
+                                                    name="modal-step4" checked>
+                                                <label class="modal__radio-label" for="modal-step4-radio1">До 100 000
+                                                    €</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step4-radio2"
+                                                    name="modal-step4">
+                                                <label class="modal__radio-label" for="modal-step4-radio2">100 000 € —
+                                                    250 000 €</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step4-radio3"
+                                                    name="modal-step4">
+                                                <label class="modal__radio-label" for="modal-step4-radio3">250 000 € –
+                                                    500 000 €</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step4-radio4"
+                                                    name="modal-step4">
+                                                <label class="modal__radio-label" for="modal-step4-radio4">500 000 € – 1
+                                                    000 000 €</label>
+                                            </div>
+                                            <div class="modal__radio-input-inner">
+                                                <input class="modal__radio-input-btn" type="radio"
+                                                    id="modal-step4-radio5" name="modal-step4">
+                                                <label class="modal__radio-input-label" for="modal-step4-radio5">
+                                                    <input class="modal__radio-input-left" type="text"
+                                                        id="modal-step4-input1" name="modal-step4" placeholder="От"
+                                                        disabled />
+                                                    <input class="modal__radio-input-right" type="text"
+                                                        id="modal-step4-input2" name="modal-step4" placeholder="До"
+                                                        disabled />
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal__btn-inner">
+                                            <button class="modal__btn-before" id="modal-step4-before-link"
+                                                href="#modal-step3"></button>
+                                            <button class="modal__btn" id="modal-step4-link"
+                                                href="#modal-step5">ДАЛЕЕ</button>
+                                        </div>
+                                        <div class="modal__steps">
+                                            4 <span>/ 5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal" id="modal-step5" style="display: none;">
+                                    <div class="logo modal__logo">
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__img" src="images/logo-img.svg" alt="logo">
+                                        </a>
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__text" src="images/logo-text.svg" alt="logo">
+                                        </a>
+                                    </div>
+                                    <button class="modal__close-btn">
+                                        <img src="images/icon-menu-close.svg" alt="">
+                                    </button>
+                                    <div class="modal__inner">
+                                        <div class="modal__title">
+                                            <h3>Какой рекламный бюджет планируете инвестировать?</h3>
+                                        </div>
+                                        <div class="modal__form">
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step5-radio1"
+                                                    name="modal-step5" checked>
+                                                <label class="modal__radio-label" for="modal-step5-radio1">До 1 000 € в
+                                                    месяц</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step5-radio2"
+                                                    name="modal-step5">
+                                                <label class="modal__radio-label" for="modal-step5-radio2">1 000 € — 2
+                                                    000 € в месяц</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step5-radio3"
+                                                    name="modal-step5">
+                                                <label class="modal__radio-label" for="modal-step5-radio3">2 000 € – 3
+                                                    000 € в месяц</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step5-radio4"
+                                                    name="modal-step5">
+                                                <label class="modal__radio-label" for="modal-step5-radio4">3 000 € – 5
+                                                    000 € в месяц</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__radio-btn" type="radio" id="modal-step5-radio5"
+                                                    name="modal-step5">
+                                                <label class="modal__radio-label" for="modal-step5-radio5">5 000 € – 10
+                                                    000 € в месяц</label>
+                                            </div>
+                                            <div class="modal__radio-input-inner">
+                                                <input class="modal__radio-input-btn" type="radio"
+                                                    id="modal-step5-radio6" name="modal-step5">
+                                                <label class="modal__radio-input-label" for="modal-step5-radio6">
+                                                    <input class="modal__radio-input-left" type="text"
+                                                        id="modal-step5-input1" name="modal-step5" placeholder="От"
+                                                        disabled />
+                                                    <input class="modal__radio-input-right" type="text"
+                                                        id="modal-step5-input2" name="modal-step5" placeholder="До"
+                                                        disabled />
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal__btn-inner">
+                                            <button class="modal__btn-before" id="modal-step5-before-link"
+                                                href="#modal-step4"></button>
+                                            <button class="modal__btn" id="modal-step5-link"
+                                                href="#modal-contact">ДАЛЕЕ</button>
+                                        </div>
+                                        <div class="modal__steps">
+                                            5 <span>/ 5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal" id="modal-contact" style="display: none;">
+                                    <div class="logo modal__logo">
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__img" src="images/logo-img.svg" alt="logo">
+                                        </a>
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__text" src="images/logo-text.svg" alt="logo">
+                                        </a>
+                                    </div>
+                                    <button class="modal__close-btn">
+                                        <img src="images/icon-menu-close.svg" alt="">
+                                    </button>
+                                    <div class="modal__inner">
+                                        <div class="modal__title">
+                                            <h3>Укажите свои контакты</h3>
+                                        </div>
+                                        <div class="modal__form">
+                                            <div class="modal__form-additional">
+                                                Укажите ваши контакты и мы свяжемся с вами в ближайшие сутки для
+                                                предоставления расчета
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__contact-input" type="text"
+                                                    id="modal-contact-main-radio1" name="modal-contact-main"
+                                                    placeholder="Страна / город">
+                                                <label class="modal__contact-input-label"
+                                                    for="modal-contact-main-radio1">Страна / город</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__contact-input" type="text"
+                                                    id="modal-contact-main-radio2" name="modal-contact-main" \
+                                                    placeholder="Ваше полное имя">
+                                                <label class="modal__contact-input-label"
+                                                    for="modal-contact-main-radio2">Ваше полное имя</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__contact-input" type="text"
+                                                    id="modal-contact-main-radio3" name="modal-contact-main"
+                                                    placeholder="E-mail">
+                                                <label class="modal__contact-input-label"
+                                                    for="modal-contact-main-radio3">E-mail</label>
+                                            </div>
+                                            <div class="modal__form-inner">
+                                                <input class="modal__contact-input" type="text"
+                                                    id="modal-contact-main-radio4" name="modal-contact-main"
+                                                    placeholder="Телефон">
+                                                <label class="modal__contact-input-label"
+                                                    for="modal-contact-main-radio4">Телефон</label>
+                                            </div>
+                                            <div class="modal__radio-top-items modal__radio-top-items--contact">
+                                                <div class="modal__radio-top-item">
+                                                    <input class="modal__radio-top-btn" type="radio"
+                                                        id="modal-contact-top-radio1" name="modal-contact-top" checked>
+                                                    <label class="modal__radio-top-label"
+                                                        for="modal-contact-top-radio1">WhatsApp</label>
+                                                </div>
+                                                <div class="modal__radio-top-item">
+                                                    <input class="modal__radio-top-btn" type="radio"
+                                                        id="modal-contact-top-radio2" name="modal-contact-top">
+                                                    <label class="modal__radio-top-label"
+                                                        for="modal-contact-top-radio2">Viber</label>
+                                                </div>
+                                                <div class="modal__radio-top-item">
+                                                    <input class="modal__radio-top-btn" type="radio"
+                                                        id="modal-contact-top-radio3" name="modal-contact-top">
+                                                    <label class="modal__radio-top-label"
+                                                        for="modal-contact-top-radio3">Telegram</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal__btn-inner modal__form-contact-btn-inner">
+                                            <button class="modal__btn-before" id="modal-contact-before-link"
+                                                href="#modal-step5"></button>
+                                            <button class="modal__btn modal__btn-contact" id="modal-contact-link"
+                                                href="#modal-social">ПОЛУЧИТЬ КОД</button>
+                                        </div>
+                                        <div class="modal__form-contact-checkbox">
+                                            <input class="modal__contact-accept-checkbox-input" type="checkbox"
+                                                id="modal-contact-accept-checkbox" name="modal-contact-main">
+                                            <label class="modal__contact-accept-checkbox-label"
+                                                for="modal-contact-accept-checkbox">Я принимаю <a class="modal__contact-accept-checkbox-link" href="#">условия</a> по обработке данных</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal" id="modal-social" style="display: none;">
+                                    <div class="logo modal__logo">
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__img" src="images/logo-img.svg" alt="logo">
+                                        </a>
+                                        <a class="logo__link" href="#">
+                                            <img class="logo__text" src="images/logo-text.svg" alt="logo">
+                                        </a>
+                                    </div>
+                                    <button class="modal__close-btn">
+                                        <img src="images/icon-menu-close.svg" alt="">
+                                    </button>
+                                    <div class="modal__inner">
+                                        <div class="modal__title">
+                                            <h3>Перейдите в удобный мессенджер для общения</h3>
+                                        </div>
+                                        <div class="modal__form">
+                                            <div class="modal__form-additional">
+                                                Вы можете подождать нашего сообщения или написать нам первыми
+                                            </div>
+                                            <div class="modal__social-btn-inner">
+                                                <button class="modal__social-btn modal__social-btn--whatsapp" href="#">
+                                                    WhatsApp
+                                                </button>
+                                                <button class="modal__social-btn modal__social-btn--telegram" href="#">
+                                                    Telegram
+                                                </button>
+                                                <button class="modal__social-btn modal__social-btn--messenger" href="#">
+                                                    Messenger
+                                                </button>
+                                            </div>
+                                            <div class="modal__btn-inner">
+                                                <button class="modal__btn-before" id="modal-social-before-link"
+                                                    href="#modal-step5"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="base-button applications__invite-btn" id="modal-open-link"
+                                href="#modal-start">Узнать цену заявки</button>
+                        </div>
+                    </div>
+                    <div class="applications__items">
+                        <div class="applications__items-column1">
+                            <div class="applications__card">
+                                <div class="applications__card-country">ИСПАНИЯ</div>
+                                <div class="applications__card-title">Куплю квартиру в центре Барселоны</div>
+                                <div class="applications__card-square">Общая: <span>50 — 80 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>4 месяца</span></div>
+                                <div class="applications__card-price">Цена до: <span>250 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ГРЕЦИЯ</div>
+                                <div class="applications__card-title">Куплю отель / бизнес в Халкидиках</div>
+                                <div class="applications__card-square">Общая: <span>от 2 000 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>2 месяца</span></div>
+                                <div class="applications__card-price">Цена до: <span>3 000 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ТУРЦИЯ</div>
+                                <div class="applications__card-title">Куплю квартиру в Алании на 2 линии</div>
+                                <div class="applications__card-square">Общая: <span>60 — 120 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>1 месяц</span></div>
+                                <div class="applications__card-price">Цена до: <span>100 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ПОРТУГАЛИЯ</div>
+                                <div class="applications__card-title">Куплю земельный участок в Португалии</div>
+                                <div class="applications__card-square">Общая: <span>800 — 1 000 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>2 месяца</span></div>
+                                <div class="applications__card-price">Цена до: <span>600 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ИСПАНИЯ</div>
+                                <div class="applications__card-title">Куплю виллу для инвестиций и ПМЖ</div>
+                                <div class="applications__card-square">Общая: <span>250 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>2 месяца</span></div>
+                                <div class="applications__card-price">Цена до: <span>500 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">КИПР</div>
+                                <div class="applications__card-title">Куплю квартиру в Лимассоле у моря</div>
+                                <div class="applications__card-square">Общая: <span>120 — 200 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>3 месяца</span></div>
+                                <div class="applications__card-price">Цена до: <span>2 000 000 €</span></div>
+                            </div>
+                        </div>
+                        <div class="applications__items-column2">
+                            <div class="applications__card">
+                                <div class="applications__card-country">ЧЕРНОГОРИЯ</div>
+                                <div class="applications__card-title">Куплю апартаменты в Тивате или Будве</div>
+                                <div class="applications__card-square">Общая: <span>80 — 120 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>3 месяца</span></div>
+                                <div class="applications__card-price">Цена до: <span>300 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ТУРЦИЯ</div>
+                                <div class="applications__card-title">Куплю квартиру в центре Стамбула</div>
+                                <div class="applications__card-square">Общая: <span>80 — 160 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>не срочно</span></div>
+                                <div class="applications__card-price">Цена до: <span>750 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ГЕРМАНИЯ</div>
+                                <div class="applications__card-title">Куплю новую студию в центре Берлина</div>
+                                <div class="applications__card-square">Общая: <span>от 80 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>1 месяц</span></div>
+                                <div class="applications__card-price">Цена до: <span>260 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">США</div>
+                                <div class="applications__card-title">Куплю апартаменты в Майами / инвестиции</div>
+                                <div class="applications__card-square">Общая: <span>от 60 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>3 месяца</span></div>
+                                <div class="applications__card-price">Цена до: <span>800 000 $</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ФРАНЦИЯ</div>
+                                <div class="applications__card-title">Куплю виллу во Франции для отдыха </div>
+                                <div class="applications__card-square">Общая: <span>от 1500 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>не срочно</span></div>
+                                <div class="applications__card-price">Цена до: <span>500 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">РОССИЯ</div>
+                                <div class="applications__card-title">Куплю дом в Сочи для инвестиций и отдыха </div>
+                                <div class="applications__card-square">Общая: <span>от 150 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>срочно</span></div>
+                                <div class="applications__card-price">Цена до: <span>35 000 000 ₽</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ИСПАНИЯ</div>
+                                <div class="applications__card-title">Куплю виллу в Бенидорме с видом на</div>
+                                <div class="applications__card-square">Общая: <span>200 — 300 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>1 месяц</span></div>
+                                <div class="applications__card-price">Цена до: <span>350 000 €</span></div>
+                            </div>
+                        </div>
+                        <div class="applications__items-column3">
+                            <div class="applications__card">
+                                <div class="applications__card-country">РОССИЯ</div>
+                                <div class="applications__card-title">Арендую офис со складом в Москве</div>
+                                <div class="applications__card-square">Общая: <span>от 8 000 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>срочно</span></div>
+                                <div class="applications__card-price">Цена до: <span>800 000 ₽</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">США</div>
+                                <div class="applications__card-title">Куплю квартиру в Клифорнии </div>
+                                <div class="applications__card-square">Общая: <span>от 80 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>1 месяц</span></div>
+                                <div class="applications__card-price">Цена до: <span>600 000 $</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ТАЙЛАНД</div>
+                                <div class="applications__card-title">Куплю апартаменты на Пхукете / инвестиции</div>
+                                <div class="applications__card-square">Общая: <span>от 50 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>2 месяца</span></div>
+                                <div class="applications__card-price">Цена до: <span>80 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ИТАЛИЯ</div>
+                                <div class="applications__card-title">Куплю новый таунхаус в Белладжо </div>
+                                <div class="applications__card-square">Общая: <span>от 80 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>3 месяца</span></div>
+                                <div class="applications__card-price">Цена до: <span>700 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ТУРЦИЯ</div>
+                                <div class="applications__card-title">Куплю квартиру в Анталье у моря</div>
+                                <div class="applications__card-square">Общая: <span>до 80 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>6 месяцов</span></div>
+                                <div class="applications__card-price">Цена до: <span>100 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ГЕРМАНИЯ</div>
+                                <div class="applications__card-title">Куплю апартаменты в Мюнхене / инвестиции</div>
+                                <div class="applications__card-square">Общая: <span>от 50 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>срочно</span></div>
+                                <div class="applications__card-price">Цена до: <span>400 000 €</span></div>
+                            </div>
+                            <div class="applications__card">
+                                <div class="applications__card-country">ТУРЦИЯ</div>
+                                <div class="applications__card-title">Куплю земельный участок в Бодруме</div>
+                                <div class="applications__card-square">Общая: <span>2000 m²</span></div>
+                                <div class="applications__card-urgency">Срочность: <span>не срочно</span></div>
+                                <div class="applications__card-price">Цена до: <span>800 000 €</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experience">
+            <div class="container">
+                <div class="experience__items">
+                    <div class="experience__item">
+                        <div class="experience__item-aside">12 +</div>
+                        <div class="experience__item-title">Лет опыта в маркетинге и продажах</div>
+                        <div class="experience__item-content">Более 12 лет увеличиваем продажи нашим клиентам с помощью
+                            интернет-маркетинга. С 2016 года работаем только с продавцами недвижимости по всему миру.
+                        </div>
+                    </div>
+                    <div class="experience__item">
+                        <div class="experience__item-aside">3000 +</div>
+                        <div class="experience__item-title">Тестов в рекламе недвижимости</div>
+                        <div class="experience__item-content">Ежегодно тестируем гипотезы на сотни тыс. евро рекламного
+                            бюджета. Отлично знаем вашу целевую аудиторию и способы ее привлечения.</div>
+                    </div>
+                    <div class="experience__item">
+                        <div class="experience__item-aside">1-2%</div>
+                        <div class="experience__item-title">По статистике из 100 целевых заявок покупают</div>
+                        <div class="experience__item-content">По нашей статистике 1 - 2 % из 100 целевых заявок
+                            покупает.
+                            Средний период сделки с недвижимостью занимает 2 - 6 месяцев. Но статистика сильно зависит
+                            от
+                            навыков продавца.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="general-info">
+            <div class="container">
+                <div class="general-info__inner">
+                    <div class="title general-info__title">
+                        <h2>
+                        Что и для кого делаем?
+                        </h2>
+                    </div>
+                    <div class="general-info__content">Настраиваем таргетированную рекламу в facebook и instagram.
+                        Находим вашу целевую аудиторию и мотивируем оставить заявку. Работаем в узком сегменте:</div>
+                    <div class="general-info__items">
+                        <div class="general-info__item general-info__item--search">
+                            <div class="general-info__item-title">
+                                Помогаем
+                            </div>
+                            <div class="general-info__item-content">Агентствам недвижимости, частным риелторам,
+                                застройщикам и собственникам</div>
+                        </div>
+                        <div class="general-info__item general-info__item--speaker">
+                            <div class="general-info__item-title">
+                                Привлекать
+                            </div>
+                            <div class="general-info__item-content">Для инвестиций, для продажи, для отдыха, для ПМЖ и
+                                гражданства</div>
+                        </div>
+                        <div class="general-info__item general-info__item--customers">
+                            <div class="general-info__item-title">
+                                Покупателей
+                            </div>
+                            <div class="general-info__item-content">Квартир, апартаментов, вилл, земельных участков и
+                                коммерческой недвижимости</div>
+                        </div>
+                        <div class="general-info__item general-info__item--customer">
+                            <div class="general-info__item-title">
+                                Или
+                            </div>
+                            <div class="general-info__item-content">Собственников, агентов для партнерства, арендаторов,
+                                инвесторов в проекты</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="facts" id="facts">
+            <div class="container">
+                <div class="title facts__slider-title">
+                    <h2>
+                    5 фактов о нас
+                    </h2>
+                </div>
+                <div class="facts__slider-inner">
+                    <div class="facts__slider-item">
+                        <div class="facts__slider-content">
+                            <div class="facts__slider-content-title">Факт №1</div>
+                            <div class="facts__slider-text">Маркетинговое агентство MIRADEN — это, в первую очередь,
+                                люди. Фанатичные рекламщики, преданные своему любимому делу. Готовые работать, не
+                                замечая хода времени, для достижения высоких результатов.</div>
+                        </div>
+                    </div>
+                    <div class="facts__slider-item">
+                        <div class="facts__slider-content">
+                            <div class="facts__slider-content-title">Факт №2</div>
+                            <div class="facts__slider-text">Компания начала свой путь в 2009 году. За это время
+                                реализовано несколько сотен рекламных проектов. В 2016 году было принято решение
+                                совершенствовать маркетинговые услуги только в сфере недвижимости и стать лучшими в
+                                своем деле.</div>
+                        </div>
+                    </div>
+                    <div class="facts__slider-item">
+                        <div class="facts__slider-content">
+                            <div class="facts__slider-content-title">Факт №3</div>
+                            <div class="facts__slider-text">У нас есть комплексный подход к работе с риелторами и
+                                застройщиками. Мы настраиваем и ведем рекламу в facebook, instagram, Google, Yandex и
+                                YouTube. Настраиваем воронки продаж в CRM системе. Снимаем продающие видео. Оказываем
+                                консультационные услуги в области маркетинга и продаж.</div>
+                        </div>
+                    </div>
+                    <div class="facts__slider-item">
+                        <div class="facts__slider-content">
+                            <div class="facts__slider-content-title">Факт №4</div>
+                            <div class="facts__slider-text">Рынок недвижимости динамично меняется. И нашу миссию мы
+                                видим в создании и развитии современных онлайн-сервисов. Помогающих продавцам и
+                                покупателям совершать сделки на новом уровне качества, скорости и безопасности. </div>
+                        </div>
+                    </div>
+                    <div class="facts__slider-item">
+                        <div class="facts__slider-content">
+                            <div class="facts__slider-content-title">Факт №5</div>
+                            <div class="facts__slider-text">Miraden.com — это еще и онлайн платформа для заказа
+                                персональных подборок недвижимости. Теперь каждый покупатель может оставить анонимную
+                                заявку и получить каталог предложений от независимых риелторов и агенств!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why">
+            <div class="container">
+                <div class="why__inner">
+                    <div class="title why__title">
+                        <h2>
+                        Почему с нами выгоднее, чем без нас?
+                        </h2>
+                    </div>
+                    <div class="why__text">Заявки из соц. сетей дорогие и мало целевых — так говорят те, кто пробовал
+                        самостоятельно. Но мы постоянно доказываем обратное!</div>
+                    <div class="why__items">
+                        <div class="why__item">
+                            <img class="why__item-img" src="../images/icon-wallet.svg" alt="wallet" />
+                            <div class="why__item-title">
+                                <h3>
+                                Совершили 99% ключевых ошибок
+                            </h3>
+                            </div>
+                            <div class="why__item-content">Важно осознать, что сфера недвижимости одна из самых
+                                конкурентных и дорогих с точки зрения рекламы. Каждая ошибка там стоит дороже, чем наши
+                                услуги. Мы успели совершить 99% ключевых ошибок, и знаем, о чем говорим.</div>
+                        </div>
+                        <div class="why__item">
+                            <img class="why__item-img" src="../images/icon-time-square.svg" alt="time-square" />
+                            <div class="why__item-title">
+                                <h3>
+                                Вложили 2 года и 250 000 € на тесты
+                            </h3>
+                            </div>
+                            <div class="why__item-content">Работа с нами — это самый быстрый путь для достижения цели.
+                                Мы вложили 2 года и более 250.000 € рекламного бюджета перед тем, как получился
+                                достойный и стабильный результат. К сожалению, многие делают пару попыток и решают, что
+                                facebook не работает. Но это не так!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="differences">
+            <div class="container">
+                <div class="differences__inner">
+                    <div class="title differences__title">
+                        <h2>
+                        Чем отличаемся от многих маркетологов
+                        </h2>
+                    </div>
+                    <div class="differences__text">Основная разница между MIRADEN и большинством маркетинговых агентств
+                        заключается в узком фокусе. Уже много лет мы работаем только в сфере недвижимости, благодаря
+                        чему:</div>
+                    <div class="differences__items">
+                        <div class="differences__item">
+                            <img class="differences__item-img" src="../images/icon-two-user.svg" alt="two-user"></img>
+                            <div class="differences__item-title">
+                                <h3>
+                                Работаем с личной базой целевых покупателей
+                            </h3>
+                            </div>
+                            <div class="differences__item-content">Ежедневно привлекаем десятки целевых заявок.
+                                Постоянно увеличиваем базу инвесторов и состоятельных покупателей недвижимости. Этот
+                                ресурс помогает эффективно настраивать рекламу вашей недвижимости на похожие аудитории.
+                            </div>
+                        </div>
+                        <div class="differences__item">
+                            <img class="differences__item-img" src="../images/icon-graph.svg" alt="graph"></img>
+                            <div class="differences__item-title">
+                                <h3>
+                                Обладаем статисткой для точного прогнозирования
+                            </h3>
+                            </div>
+                            <div class="differences__item-content">За годы работы нам удалось собрать много
+                                статистических данных. Знаем допустимую цену заявки, конверсию в продажу, циклы сделок и
+                                т. д. Благодаря этому даем реальные прогнозы результата и видим точки роста бизнеса.
+                            </div>
+                        </div>
+                        <div class="differences__item">
+                            <img class="differences__item-img" src="../images/icon-activity.svg" alt="activity"></img>
+                            <div class="differences__item-title">
+                                <h3>
+                                Отлично понимаем стимулы покупателей недвижимости
+                            </h3>
+                            </div>
+                            <div class="differences__item-content">Успех рекламной кампании на 50% зависит от понимания
+                                целевой аудитории. Наши маркетологи постоянно слушают записи телефонных переговоров с
+                                покупателями недвижимости. Изучают психологию поведения и мотивы совершения сделок.
+                            </div>
+                        </div>
+                        <div class="differences__item">
+                            <img class="differences__item-img" src="../images/icon-location.svg" alt="location"></img>
+                            <div class="differences__item-title">
+                                <h3>
+                                Работаем практически по всем странам мира
+                            </h3>
+                            </div>
+                            <div class="differences__item-content">Настраиваем рекламу на любую страну и на любом языке,
+                                исходя из ваших пожеланий. Знаем более 6000 локаций состоятельных людей для геотаргета.
+                                Обладаем методом привлечения иностранных клиентов для дистанционных сделок.</div>
+                        </div>
+                    </div>
+                    <button class="base-button differences__invite-btn" id="modal-open-link-differences"
+                        href="#modal-start">Узнать
+                        цену
+                        заявки</button>
+                </div>
+            </div>
+        </section>
+        <section class="target-application">
+            <div class="container">
+                <div class="target-application__inner">
+                    <div class="target-application__content">
+                        <div class="title target-application__content-title">
+                            <h2>
+                            Что мы называем «целевой заявкой»?
+                        </h2>
+                        </div>
+                        <div class="target-application__content-text">Целевая заявка — это обращение от клиента,
+                            который вышел на связь и подтвердил интерес к вашей недвижимости или услугам.</div>
+                        <div class="target-application__content-items">
+                            <div class="target-application__content-item">
+                                <div class="target-application__content-item-title">
+                                    <h3>
+                                    Клиент указывает реальные контакты
+                                </h3>
+                                </div>
+                                <div class="target-application__content-item-text">Полное имя, телефон, Email и
+                                    Мессенджер проходят автоматическую проверку до поступления в работу</div>
+                            </div>
+                            <div class="target-application__content-item">
+                                <div class="target-application__content-item-title">
+                                    <h3>
+                                    И отвечает на персональные
+                                        вопросы
+                                </h3>
+                            </div>
+                                <div class="target-application__content-item-text">Форма сделки, локация объекта, тип
+                                    недвижимости, площадь, цель и бюджет покупки</div>
+                            </div>
+                            <div class="target-application__content-item">
+                                <div class="target-application__content-item-text">Параметры интересов всегда
+                                    индивидуальные и согласовываются с вами в Договоре заранее. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="target-application__img" src="../images/target-application-img.svg"
+                        alt="target-application-img">
+                </div>
+            </div>
+        </section>
+        <section class="about-ad">
+            <div class="container">
+                <div class="about-ad__inner">
+                    <img class="about-ad__img" src="../images/about-ad-img.svg" alt="about-ad-img">
+                    <div class="about-ad__content">
+                        <div class="title about-ad__content-title"><h2>Кто, где и когда видит вашу рекламу?</h2></div>
+                        <div class="about-ad__content-items">
+                            <div class="about-ad__content-item">
+                                <div class="about-ad__content-item-title"><h3>Кто?</h3></div>
+                                <div class="about-ad__content-item-text">Вашу рекламу видят пользователи
+                                    facebook и instagram. Но только те люди, которые в большей степени соответствуют
+                                    вашей целевой аудитории.</div>
+                            </div>
+                            <div class="about-ad__content-item">
+                                <div class="about-ad__content-item-title"><h3>Где?</h3></div>
+                                <div class="about-ad__content-item-text">Объявление показывается в новостной
+                                    ленте facebook и instagram вашей целевой аудитории. Также, реклама появляться в
+                                    историях и поиске.</div>
+                            </div>
+                            <div class="about-ad__content-item">
+                                <div class="about-ad__content-item-title"><h3>Когда?</h3></div>
+                                <div class="about-ad__content-item-text">Реклама работает круглосуточно.
+                                    Если клиента заинтересовала ваше объявление, он оставляет заявку через онлайн форму
+                                    и получает доступ к информации. А вы связываетесь с ним в любое удобное время.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="client-steps">
+            <div class="container">
+                <div class="client-steps__inner">
+                    <div class="title client-steps__title"><h2>Что проходит клиент по дороге к вам?</h2></div>
+                    <div class="client-steps__items">
+                        <div class="client-steps__item">
+                            <div class="client-steps__item-count">1</div>
+                            <div class="client-steps__item-title"><h3>Видит рекламный пост</h3></div>
+                            <div class="client-steps__item-text">Знакомится с вашим рекламным сообщением в Facebook или
+                                Instagram. </div>
+                        </div>
+                        <div class="client-steps__item">
+                            <div class="client-steps__item-count">2</div>
+                            <div class="client-steps__item-title"><h3>Отвечает на вопросы</h3></div>
+                            <div class="client-steps__item-text">Переходит в форму заявки. Отвечает на 4 - 6 вопросов
+                                для выявления потребности</div>
+                        </div>
+                        <div class="client-steps__item">
+                            <div class="client-steps__item-count">3</div>
+                            <div class="client-steps__item-title"><h3>Отправляет контакты</h3></div>
+                            <div class="client-steps__item-text">Для получения интересующей информации оставляет свои
+                                контакты в ручном режиме</div>
+                        </div>
+                        <div class="client-steps__item">
+                            <div class="client-steps__item-count">4</div>
+                            <div class="client-steps__item-title"><h3>Выходит на связь</h3></div>
+                            <div class="client-steps__item-text">Получает от вас автоматическо сообщение в мессенджер и
+                                выходит на связь</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ad-views">
+            <div class="container">
+                <div class="ad-views__inner">
+                    <div class="ad-views__content">
+                        <div class="title ad-views__content-title"><h2>Как выглядит реклама?</h2></div>
+                        <div class="ad-views__content-text">В соц. сетях можем рекламировать один объект, подборку
+                            недвижимости или ваши услуги. Это всегда индивидуально и зависит от вашей цели. Решаем эту
+                            задачу в 3 этапа:</div>
+                        <div class="ad-views__content-items">
+                            <div class="ad-views__content-item">
+                                <div class="ad-views__content-item-text"><h3>Определяем ценность вашего предложения</h3></div>
+                            </div>
+                            <div class="ad-views__content-item">
+                                <div class="ad-views__content-item-text"><h3>Описываем предложение на языке потребителя</h3>
+                                </div>
+                            </div>
+                            <div class="ad-views__content-item">
+                                <div class="ad-views__content-item-text"><h3>
+                                    Создаем причину, по которой клиент захочет
+                                        оставить заявку
+                                </h3></div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ad-views__img" src="../images/ad-views-img.png" alt="ad-views-img">
+                </div>
+            </div>
+        </section>
+        <section class="form-views">
+            <div class="form-views__inner">
+                <div class="form-views__slider-title">
+                    <h2>Как выглядит форма?</h2>
+                </div>
+                <div class="form-views__slider-text">
+                    Желающие получить услугу подбора или каталог недвижимости заполняют форму заявки. Все данные
+                    передаются вам на E-mail или в CRM-систему автоматически.
+                </div>
+                <div class="form-views__slider-inner">
+                    <div class="form-views__slider-item">
+                        <img class="form-views__slider-img" data-lazy="../images/form-slider-img-1.svg"
+                            alt="form-slider-img-1">
+                    </div>
+                    <div class="form-views__slider-item">
+                        <img class="form-views__slider-img" data-lazy="../images/form-slider-img-2.svg"
+                            alt="form-slider-img-2">
+                    </div>
+                    <div class="form-views__slider-item">
+                        <img class="form-views__slider-img" data-lazy="../images/form-slider-img-3.svg"
+                            alt="form-slider-img-3">
+                    </div>
+                    <div class="form-views__slider-item">
+                        <img class="form-views__slider-img" data-lazy="../images/form-slider-img-4.svg"
+                            alt="form-slider-img-4">
+                    </div>
+                    <div class="form-views__slider-item">
+                        <img class="form-views__slider-img" data-lazy="../images/form-slider-img-5.svg"
+                            alt="form-slider-img-5">
+                    </div>
+                    <div class="form-views__slider-item">
+                        <img class="form-views__slider-img" data-lazy="../images/form-slider-img-6.svg"
+                            alt="form-slider-img-6">
+                    </div>
+                    <div class="form-views__slider-item">
+                        <img class="form-views__slider-img" data-lazy="../images/form-slider-img-7.svg"
+                            alt="form-slider-img-7">
+                    </div>
+                    <div class="form-views__slider-item">
+                        <img class="form-views__slider-img" data-lazy="../images/form-slider-img-8.svg"
+                            alt="form-slider-img-8">
+                    </div>
+                </div>
+                <div class="form-views__slider-info">
+                    Вопросы и ответы в форме создаются индивидуально. Сама форма может находиться в социальной сети
+                    или на странице нашего портала. Выбор зависит от рекламной стратегии.
+                </div>
+            </div>
+        </section>
+        <section class="work-stages">
+            <div class="container">
+                <div class="work-stages__inner">
+                    <div class="title work-stages__title"><h2>Этапы и условия работ</h2></div>
+                    <div class="work-stages__text">Уже через 5 дней работы вы начнете получать стабильный поток целевых
+                        заявок</div>
+                    <div class="work-stages__bottom-inner">
+                        <div class="work-stages__content">
+                            <div class="title about-ad__content-title"><h3>Определяем целевую аудиторию</h3></div>
+                            <div class="work-stages__content-text">
+                                <p>Согласовываем характеристики целевой заявки. Затем
+                                    определяем примерную стоимость клиента и количество обращений в день.</p>
+                                <p>Эта информация позволяет определить стоимость и цель работы. Только после этого
+                                    подписываем договор.</p>
+                            </div>
+                            <a class="work-stages__content-link" href="#">
+                                Типовой договор
+                            </a>
+                        </div>
+                        <img class="work-stages__img" src="../images/work-stages-img.svg" alt="work-stages-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="first-step">
+            <div class="container">
+                <div class="first-step__inner">
+                    <img class="first-step__img" src="../images/first-step-img.svg" alt="first-step-img">
+                    <div class="first-step__content">
+                        <div class="first-step__content-subtitle">ПЕРВЫЙ ДЕНЬ</div>
+                        <div class="title first-step__content-title"><h3>Загружаем объекты на портал Miraden</h3></div>
+                        <div class="first-step__content-text">
+                            <p>Регистрируетесь и загружаете на наш портал недвижимость, которую хотите рекламировать.
+                                Это может быть как 1 объект, так и 101. Ограничений по количеству нет. </p>
+                            <p>Естественно мы поможем понять, что вам рекламировать лучше всего.</p>
+                        </div>
+                        <a class="first-step__content-link" href="#">Пример страницы объекта</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="second-step">
+            <div class="container">
+                <div class="second-step__inner">
+                    <div class="second-step__content">
+                        <div class="second-step__content-subtitle">ВТОРОЙ ДЕНЬ</div>
+                        <div class="title second-step__content-title"><h3>Настраиваем форму на странице захвата</h3></div>
+                        <div class="second-step__content-text">
+                            <p>С учетом информации о вашей недвижимости и целевой аудитории мы разрабатываем страницу
+                                захвата. И настраиваем форму заявки. </p>
+                            <p>Именно на эту страницу будут переходить клиенты, когда ознакомятся с рекламой в Facebook
+                                или instagram.</p>
+                        </div>
+                        <a class="second-step__content-link" href="#">Пример страницы захвата</a>
+                    </div>
+                    <img class="second-step__img" src="../images/second-step-img.svg" alt="second-step-img">
+                </div>
+            </div>
+        </section>
+        <section class="third-step">
+            <div class="container">
+                <div class="third-step__inner">
+                    <img class="third-step__img" src="../images/third-step-img.svg" alt="third-step-img">
+                    <div class="third-step__content">
+                        <div class="third-step__content-subtitle">ТРЕТИЙ ДЕНЬ</div>
+                        <div class="title third-step__content-title"><h3>Создаем рекламные объявления</h3></div>
+                        <div class="third-step__content-text">
+                            <p>Изучаем ваши объекты или услуги на рынке недвижимости. Определяем целевые аудитории.</p>
+                            <p>Разрабатываем рекламные объявления в зависимости от количества целевых групп. Все
+                                материалы публикуем после согласования.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fourth-step">
+            <div class="container">
+                <div class="fourth-step__inner">
+                    <div class="fourth-step__content">
+                        <div class="fourth-step__content-subtitle">ЧЕТВЕРТЫЙ ДЕНЬ</div>
+                        <div class="title fourth-step__content-title"><h3>Настраиваем рекламу в facebook / instagram</h3></div>
+                        <div class="fourth-step__content-text">
+                            <p>Согласовываем географию показа объявлений. По вашему желанию переводим рекламу на любой
+                                язык мира.</p>
+                            <p>Первый месяц настройка ведется в нашем кабинете facebook с возможностью переноса. Сама
+                                реклама показывается от вашей страницы или от Miraden, по согласованию.</p>
+                        </div>
+                    </div>
+                    <img class="fourth-step__img" src="../images/fourth-step-img.svg" alt="fourth-step-img">
+                </div>
+            </div>
+        </section>
+        <section class="fifth-step">
+            <div class="container">
+                <div class="fifth-step__inner">
+                    <img class="fifth-step__img" src="../images/fifth-step-img.svg" alt="fourth-step-img">
+                    <div class="fifth-step__content">
+                        <div class="fifth-step__content-subtitle">ПЯТЫЙ ДЕНЬ</div>
+                        <div class="title fifth-step__content-title"><h3>Активируем рекламу и передаем заявки</h3></div>
+                        <div class="fifth-step__content-text">
+                            <p>Активируем рекламу и ежедневно работаем над улучшением показателей. Подключаем форму к
+                                вашей CRM для мгновенной передачи заявок. </p>
+                            <p>Система автоматически уведомляет вас о клиентах, которые вышли на связь через мессенджер
+                                и подтвердили интерес.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fifth-step__button-inner">
+                    <button class="base-button fifth-step__invite-btn" id="modal-open-link-fifth-step"
+                        href="#modal-start">Узнать
+                        цену
+                        заявки</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="reviews" id="reviews">
+            <div class="reviews__inner">
+                <div class="reviews__title">
+                    <h2>Отзывы и кейсы</h2>
+                </div>
+                <div class="reviews__text">
+                    Несколько отзывов наших клиентов и видео кейсы реализованных проектов
+                </div>
+                <div class="reviews__slider-inner">
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider-item-video">
+                            <img class="reviews__slider-item-video-play-img"
+                                data-lazy="../images/reviews-video-1.jpg"><span
+                                class="reviews__slider-play-img" /></span>
+                            <!-- <iframe origin="http://127.0.0.1:3000" src="https://www.youtube.com/embed/mr6BBTsY5Xc" modestbranding="1" rel="0" showinfo="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        </div>
+                        <div class="reviews__slider-item-aside">
+                            Руководитель выставки зарубежной недвижимости “GPG”
+                        </div>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider-item-video">
+                            <img class="reviews__slider-item-video-play-img"
+                                data-lazy="../images/reviews-video-2.jpg"><span
+                                class="reviews__slider-play-img" /></span>
+                            <!-- <iframe origin="http://127.0.0.1:3000" src="https://www.youtube.com/embed/vDyYk-_S1Mk" modestbranding="1" rel="0" showinfo="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        </div>
+                        <div class="reviews__slider-item-aside">
+                            Руководитель строительной компании в Черногории
+                        </div>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider-item-video">
+                            <img class="reviews__slider-item-video-play-img"
+                                data-lazy="../images/reviews-video-3.jpg"><span
+                                class="reviews__slider-play-img" /></span>
+                            <!-- <iframe origin="http://127.0.0.1:3000" src="https://www.youtube.com/embed/M6AbQA4XXdM" modestbranding="1" rel="0" showinfo="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        </div>
+                        <div class="reviews__slider-item-aside">
+                            Директор агентства недвижимости в Турции “Liga Real Estate”
+                        </div>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider-item-video">
+                            <img class="reviews__slider-item-video-play-img"
+                                data-lazy="../images/reviews-video-4.jpg"><span
+                                class="reviews__slider-play-img" /></span>
+                            <!-- <iframe origin="http://127.0.0.1:3000" src="https://www.youtube.com/embed/Cw0ZxHp3QkE" modestbranding="1" rel="0" showinfo="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        </div>
+                        <div class="reviews__slider-item-aside">
+                            Основатель агентства и строительной компании в Марбелье
+                        </div>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider-item-video">
+                            <img class="reviews__slider-item-video-play-img"
+                                data-lazy="../images/reviews-video-5.jpg"><span
+                                class="reviews__slider-play-img" /></span>
+                            <!-- <iframe origin="http://127.0.0.1:3000" src="https://www.youtube.com/embed/ByF_Mg378eA" modestbranding="1" rel="0" showinfo="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        </div>
+                        <div class="reviews__slider-item-aside">
+                            Директор агентства недвижимости в Стамбуле “Rahat Home”
+                        </div>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider-item-video">
+                            <img class="reviews__slider-item-video-play-img"
+                                data-lazy="../images/reviews-video-6.jpg"><span
+                                class="reviews__slider-play-img" /></span>
+                            <!-- <iframe origin="http://127.0.0.1:3000" src="https://www.youtube.com/embed/czNqLqpLlhc" modestbranding="1" rel="0" showinfo="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        </div>
+                        <div class="reviews__slider-item-aside">
+                            Основатель агентства и строительной компании в Испании
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       <section class="statistics">
+            <div class="container">
+                <div class="statistics__inner">
+                    <div class="statistics__title"><h2>
+                        Статистика собрана по странам, для которых реклама работала более 1
+                            года
+                    </h2></div>
+                    <div class="statistics__items">
+                        <div class="statistics__item">
+                            <img class="statistics__item-img" src="../images/statistics-img1.jpg">
+                            <div class="statistics__item-content">
+                                <div class="statistics__item-content-country">ИСПАНИЯ</div>
+                                <div class="statistics__item-content-title"><h3>
+                                    Продажа новых вилл в Испании от 250 000 €
+                                        для инвестиций и ПМЖ
+                                </h3></div>
+                                <div class="statistics__item-content-top">Целевых заявок в день:<span>
+                                    &nbsp;12&nbsp;</span><span class="statistics__item-content-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Цена целевой заявки: <span> 17 €</span>
+                                </div>
+                                <div class="statistics__item-content-bottom">Конверсия в сделку:<span>&nbsp;1%&nbsp;
+                                    </span><span class="statistics__item-content-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Средний чек сделки: <span> 260 000 €</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statistics__item statistics__items--reverse">
+                            <img class="statistics__item-img" src="../images/statistics-img2.jpg">
+                            <div class="statistics__item-content">
+                                <div class="statistics__item-content-country">РОССИЯ</div>
+                                <div class="statistics__item-content-title"><h3>
+                                    Продажа новых квартир бизнес и премиум
+                                        класса в Москве для жизни и инвестиций
+                                </h3></div>
+                                <div class="statistics__item-content-top">Целевых заявок в день:<span>
+                                    &nbsp;23&nbsp;</span><span class="statistics__item-content-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Цена целевой заявки: <span> 41 €</span>
+                                </div>
+                                <div class="statistics__item-content-bottom">Конверсия в сделку:<span>&nbsp;1%&nbsp;
+                                    </span><span class="statistics__item-content-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Средний чек сделки: <span> 400 000 €</span>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="statistics__item">
+                            <img class="statistics__item-img" src="../images/statistics-img3.jpg">
+                            <div class="statistics__item-content">
+                                <div class="statistics__item-content-country">ТУРЦИЯ</div>
+                                <div class="statistics__item-content-title"><h3>
+                                    Продажа новой и вторичной недвижимости в
+                                        Турции от 50 000 €
+                                </h3></div>
+                                <div class="statistics__item-content-top">Целевых заявок в день:<span>
+                                    &nbsp;12&nbsp;</span><span class="statistics__item-content-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Цена целевой заявки: <span> 11 €</span>
+                                </div>
+                                <div class="statistics__item-content-bottom">Конверсия в сделку:<span>&nbsp;1.3%&nbsp;
+                                    </span><span class="statistics__item-content-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Средний чек сделки: <span> 63 000 €</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statistics__item statistics__items--reverse">
+                            <img class="statistics__item-img" src="../images/statistics-img4.jpg">
+                            <div class="statistics__item-content">
+                                <div class="statistics__item-content-country">ЧЕРНОГОРИЯ</div>
+                                <div class="statistics__item-content-title"><h3>
+                                    Продажа новых апартаментов в Черногории от
+                                        100 000 € под инвестиции
+                                </h3></div>
+                                <div class="statistics__item-content-top">Целевых заявок в день:<span>
+                                    &nbsp;15&nbsp;</span><span class="statistics__item-content-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Цена целевой заявки: <span> 11 €</span>
+                                </div>
+                                <div class="statistics__item-content-bottom">Конверсия в сделку:<span>&nbsp;0.8%&nbsp;
+                                    </span><span class="statistics__item-content-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Средний чек сделки: <span> 130 000 €</span>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="statistics__item">
+                            <img class="statistics__item-img" src="../images/statistics-img5.jpg">
+                            <div class="statistics__item-content">
+                                <div class="statistics__item-content-country">США</div>
+                                <div class="statistics__item-content-title"><h3>
+                                    Продажа новых апартаментов в Майами под
+                                        инвестиции от 1 мил. €
+                                </h3></div>
+                                <div class="statistics__item-content-top">Целевых заявок в день:<span>
+                                    &nbsp;5&nbsp;</span><span class="statistics__item-content-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Цена целевой заявки: <span> 62 €</span>
+                                </div>
+                                <div class="statistics__item-content-bottom">Конверсия в сделку:<span>&nbsp;1%&nbsp;
+                                    </span><span class="statistics__item-content-space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Средний чек сделки: <span> 1 500 000 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="tariffs" id="tariffs">
+            <div class="container">
+                <div class="tariffs__inner">
+                    <div class="tariffs__title"><h2>Тарифный план</h2></div>
+                    <div class="tariffs__text">Узнайте о возможностях Miraden и сделайте правильный выбор прямо
+                        сейчас!</div>
+                    <div class="tariffs__cards">
+                        <div class="tariffs__card">
+                            <div class="tariffs__card-cost-inner">
+                                <div class="tariffs__card-cost" id="tariff-cost-standart">590<span>€</span></div>
+                                <div class="tariffs__card-choice">
+                                    <select class="tariffs__card-choice-select" id="tariff-start">
+                                        <option class="tariffs__card-choice-option" value="1">1 месяц</option>
+                                        <option class="tariffs__card-choice-option" value="6">6 мес.</option>
+                                        <option class="tariffs__card-choice-option" value="12">1 год</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tariffs__card-bonus">+ рекламный бюджет от 900€</div>
+                            <div class="tariffs__card-title">start</div>
+                            <ul class="tariffs__card-list">
+                                <li class="tariffs__card-list-item">Составляем группы вашей целевой аудитории</li>
+                                <li class="tariffs__card-list-item">Анализируем конкурентов</li>
+                                <li class="tariffs__card-list-item">Настраиваем таргетинг в facebook / instagram</li>
+                                <li class="tariffs__card-list-item">Создаем и тестируем до 2-х рекламных постов в месяц
+                                </li>
+                                <li class="tariffs__card-list-item">Настраиваем лид-форму и подключаем к вашей CRM </li>
+                                <li class="tariffs__card-list-item">Ежедневно контролируем и улучшаем показатели</li>
+                                <li class="tariffs__card-list-item">Даем еженедельный отчет</li>
+                            </ul>
+                            <button class="base-button tariffs__card-btn">Купить</button>
+                        </div>
+                        <div class="tariffs__card">
+                            <div class="tariffs__card-cost-inner">
+                                <div class="tariffs__card-cost" id="tariff-cost-premium">990<span>€</span></div>
+                                <div class="tariffs__card-choice">
+                                    <select class="tariffs__card-choice-select" id="tariff-premium">
+                                        <option class="tariffs__card-choice-option" value="1">1 месяц</option>
+                                        <option class="tariffs__card-choice-option" value="6">6 мес.</option>
+                                        <option class="tariffs__card-choice-option" value="12">1 год</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tariffs__card-bonus">+ рекламный бюджет от 900€ </div>
+                            <div class="tariffs__card-title">premium</div>
+                            <ul class="tariffs__card-list">
+                                <li class="tariffs__card-list-item tariffs__card-list-item--selected">Включает “START”
+                                </li>
+                                <li class="tariffs__card-list-item">Создаем и тестируем до 5-ти рекламных постов в месяц
+                                </li>
+                                <li class="tariffs__card-list-item">Публикуем подборки объектов на портале Miraden</li>
+                                <li class="tariffs__card-list-item">Создаем страницы захвата для ваших подборок</li>
+                                <li class="tariffs__card-list-item">Настраиваем Salesbot и воронку в CRM системе</li>
+                                <li class="tariffs__card-list-item">Настраиваем Google аналитику и пиксель Facebook</li>
+                                <li class="tariffs__card-list-item">Применяем базу инвесторов</li>
+                            </ul>
+                            <button class="base-button tariffs__card-btn">Купить</button>
+                        </div>
+                        <div class="tariffs__card">
+                            <div class="tariffs__card-subtitle">Персональный расчет</div>
+                            <div class="tariffs__card-cost">XXXX<span>€</span></div>
+                            <div class="tariffs__card-bonus">+ рекламный бюджет от 5 900€ </div>
+                            <div class="tariffs__card-title">exclusive</div>
+                            <ul class="tariffs__card-list">
+                                <li class="tariffs__card-list-item tariffs__card-list-item--selected">Включает “PREMIUM”
+                                </li>
+                                <li class="tariffs__card-list-item">Создаем и тестируем рекламные посты без ограничений
+                                    по количеству</li>
+                                <li class="tariffs__card-list-item">Проводим консалтинг по увеличению продаж</li>
+                                <li class="tariffs__card-list-item">Настраиваем ремаркетинг / ретаргетинг в Google,
+                                    Yandex</li>
+                                <li class="tariffs__card-list-item">Снимаем продающий фильм о компании и объектах «под
+                                    ключ»</li>
+                                <li class="tariffs__card-list-item">Оказываем поддержку 24/7</li>
+                            </ul>
+                            <button class="base-button tariffs__card-btn">Рассчитать</button>
+                        </div>
+                    </div>
+                    <div class="tariffs__bottom-info">Оплата услуг доступна только верифицированным пользователям</div>
+                </div>
+            </div>
+        </section>
+ <div class="faq">
+            <div class="container">
+                <div class="faq__inner" id="faq-accordion">
+                    <div class="title faq__title"><h2>Ответы на частые вопросы</h2></div>
+                    <div class="faq__accordion">
+                        <div class="faq__item">
+                            <button class="faq__item-btn">Какие гарантии, что инвестиции в рекламу окупятся?</button>
+                            <div class="faq__item-content">
+                                <p>Мы можем отвечать только за то, на что можем влиять. В данном случае влияем только на
+                                    заявки (на их качество, стоимость и количество). Но кроме заявок есть еще 3 основных
+                                    фактора, от которых зависит окупаемость. К ним относятся:</p>
+                                <p>— Привлекательность недвижимости (ее география, состояние, уникальность, качество
+                                    фото-видео материалов)<br>— Цена недвижимости (ее конкурентоспособность, условия
+                                    оплаты)<br>
+                                    — Профессионализм самого продавца (навыки продаж, репутация продавца и компании)</p>
+                                <p>Как понимаете, данные факторы от нас не зависят. Соответственно, мы можем влиять на
+                                    окупаемость рекламных расходов примерно на 25%. </p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__item-btn">Что делать, если нет презентации, сайта или страницы в
+                                Facebook?
+                            </button>
+                            <div class="faq__item-content">
+                                <p>Все в порядке. В рекламе мы не используем сторонние сайты или презентации. Иначе это
+                                    размоет нашу ответственность за конечный результат. </p>
+                                <p>В начале работы вы получите доступ к нашему порталу для создания подробной
+                                    презентации вашей услуги, недвижимости или каталога объектов. От вас требуется
+                                    только загрузить материалы (фото, видео, описание, планировки и т. д.)</p>
+                                <p>И вам не придется создавать страницы в facebook и instagram. Рекламные объявления
+                                    показываются от социальных страниц MIRADEN, если у вас нет своих.</p>
+                                <p>Настройка тоже производится в нашем рекламном кабинете. Если по итогу первого месяца
+                                    работы вам все понравится. И вы захотите сотрудничать в долгую, тогда при желании
+                                    сможем все перенести на вашу территорию.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__item-btn">Сколько заявок в месяц вы можете привлекать?</button>
+                            <div class="faq__item-content">
+                                <p>У нас был опыт привлекать более 1000 целевых заявок в месяц на один проект. Но в
+                                    первый месяц рекомендуется делать расчет на количестве от 100 — до 150 заявок
+                                    максимум. Это оптимально с точки зрения рисков и окупаемости.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__item-btn">Как убедиться, что заявки настоящие?</button>
+                            <div class="faq__item-content">
+                                <p>Каждая заявка проходит автоматическую проверку данных. И к вам поступают только те
+                                    клиенты, которые вышли на связь в мессенджер и подтвердили интерес к недвижимости /
+                                    услуге. </p>
+                                <p>После общения с первой десяткой клиентов у вас не возникнет подобного вопроса. При
+                                    это мы всегда готовы предоставить доступы к рекламному кабинету для сверки данных.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__item-btn">На каком этапе заканчивается зона ответственности
+                                Miraden?</button>
+                            <div class="faq__item-content">
+                                <p>Наша ответственность заключается в следующих этапах работ: </p>
+                                <p>— Найти в интернете вашу целевую аудиторию.<br>
+                                    — Понятно и честно донести преимущества вашего предложения.<br>
+                                    — Создать причину, по которой клиент оставит заявку.<br>
+                                    — Выявить первичную потребность клиента через форму заявки.<br>
+                                    — Передать вам целевую заявку в CRM с реальными контактами. </p>
+                                <p>На этом наша зона ответственности заканчивается. Мы не ведем каких-либо переговоров с
+                                    клиентами.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__item-btn">Чем клиенты из контекстной рекламы в Google отличаются от
+                                клиентов из Facebook?</button>
+                            <div class="faq__item-content">
+                                <p>Мы давно работаем с этими рекламными каналами. Видим объективные плюсы и минусы
+                                    каждого. Качество заявок можно сравнить по 4-ом характеристикам:</p>
+                                <p><span>— Стоимость заявки</span><br>
+                                    Цена заявки зависит от географии, популярности услуг и других
+                                    факторов. Но по нашей статистике заявка из Google обходится дороже, чем из Facebook
+                                    минимум в 3 - 5 раз. Это обусловлено высокой конкуренцией и настройками в Google</p>
+                                <p><span>— Температура клиента</span><br>
+                                    Под температурой клиента подразумевается его уровень моральной
+                                    и финансовой готовности к сделке. Уровень готовности у клиентов из Google выше на 20
+                                    - 30% в сравнении с клиентами из Facebook. В первом случае большинство клиентов уже
+                                    понимают, чего хотят. А в Facebook мы сами находим тех, кому интересна ваша реклама.
+                                </p>
+                                <p><span>— Эксклюзивность</span><br>
+                                    Результаты наших опросов показали, что более 80% покупателей из
+                                    Google уже общаются с другими продавцами недвижимости. Это последствия высокой
+                                    температуры готовности. При этом данный показатель в Facebook не превышает 35%.
+                                    Благодаря чему в работе с клиентами из Facebook гораздо меньше конкурентной борьбы.
+                                </p>
+                                <p><span>— Состоятельность</span><br>
+                                    Клиенты из Google и Facebook совершают крупные сделки с одинаковой
+                                    периодичностью. Вопреки общему мнению, состоятельные люди не только сидят в Facebook
+                                    и Instagram, но еще и сами оставляют заявки. Мы ежедневно наблюдаем реальные запросы
+                                    на покупку недвижимости за миллионы евро.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__item-btn">Как вы будете рекламировать недвижимость по договору
+                                NDA?</button>
+                            <div class="faq__item-content">
+                                <p>Порой собственник по личным причинам не хочет заявлять о продаже недвижимости
+                                    публично. Или риелтор не может по закону разглашать информацию без подписания NDA.
+                                    При таких условиях наш метод решения задачи состоит из 3-х шагов:</p>
+                                <p>1. Подписываем с вами договор о неразглашении. Согласовываем маркетинговую стратегию.
+                                    Определяем характеристики объекта, разрешенные для публикации.</p>
+                                <p>2. Размещаем материалы объекта в нашем закрытом портале. Теперь клиенты получают
+                                    доступ к странице объекта только после регистрации и подписания NDA. Это все
+                                    настраивается автоматически.</p>
+                                <p>3. Начинаем рекламировать недвижимость в facebook. При этом, в самом объявлении
+                                    указываем только общие характеристики, без визуальных материалов.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__item-btn">С каким бюджетом вы можете привлекать покупателей?</button>
+                            <div class="faq__item-content">
+                                <p>В начале мы специализировались на привлечении состоятельных покупателей. Цена
+                                    недвижимости, которую рекламировали, начиналась от 1 миллиона EUR и до нескольких
+                                    десятков. </p>
+                                <p>Сейчас ограничения сняты и мы работаем с любой ценой недвижимости, если видим, что
+                                    для продавца это будет рентабельно.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__item-btn">Сколько объектов можно рекламировать за один раз?</button>
+                            <div class="faq__item-content">
+                                <p>Дело не в количестве объектов, а в количестве рекламных объявлений. Запускать
+                                    одновременно более 5-ти рекламных объявлений не рекомендуется. В этом случае мы
+                                    конкурируем сами с собой из-за чего повышаем стоимость заявки. </p>
+                                <p>Если у вас более 5-х объектов, тогда лучше рекламировать их по очереди. А если
+                                    объектов много, тогда стоит рекламировать каталоги. К примеру собрать Топ 50 лучших
+                                    объектов по одному региону, типу или цене. </p>
+                                <p>В отдельных случаях мы вообще можем рекламировать не объекты, а ваши услуги. К таким
+                                    услугам могут относится: Подбор недвижимости, помощь в продаже недвижимости, помощь
+                                    в получении ипотеки и т. д.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__info">Если не нашли ответ на свой вопрос, тогда напишите его в <a
+                            class="faq__info-link" href="#">поддержку</a></div>
+                </div>
+            </div>
+        </div> 
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="footer__top-inner">
+                        <div class="footer__top-logo-block">
+                            <div class="logo">
+                                <a class="logo__link" href="#">
+                                    <img class="logo__img" src="images/logo-img.svg" alt="logo">
+                                </a>
+                                <a class="logo__link" href="#">
+                                    <img class="logo__text" src="images/logo-text.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer__top-text">Настраиваем рекламу в соцсетях и обеспечиваем потоком целевых
+                                заявок. Работаем только с риелторами и застройщиками по всему миру!</div>
+                        </div>
+                        <div class="footer__top-links">
+                            <ul class="footer__top-links-left">
+                                <li class="footer__top-links-item"><a class="footer__top-link" href="#">О нас</a></li>
+                                <li class="footer__top-links-item"><a class="footer__top-link" href="#">Отзывы и
+                                        кейсы</a></li>
+                                <li class="footer__top-links-item"><a class="footer__top-link" href="#">Тарифный
+                                        план</a></li>
+                                <li class="footer__top-links-item"><a class="footer__top-link" href="#">Узнать цену
+                                        заявки</a></li>
+                            </ul>
+                            <ul class="footer__top-links-right">
+                                <li class="footer__top-links-item"><a class="footer__top-link" href="#">Портал
+                                        Miraden</a></li>
+                                <li class="footer__top-links-item"><a class="footer__top-link" href="#">Рефералам</a>
+                                </li>
+                                <li class="footer__top-links-item"><a class="footer__top-link" href="#">Поддержка</a>
+                                </li>
+                                <li class="footer__top-links-item"><a class="footer__top-link" href="#">Вход /
+                                        регистрация</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__top-social">
+                            <div class="footer__top-social-links">
+                                <ul class="footer__top-social-links-items">
+                                    <li class="footer__top-social-links-item">
+                                        <a class="footer__top-social-links-item-link" href="#">WhatsApp</a>
+                                    </li>
+                                    <li class="footer__top-social-links-item">
+                                        <a class="footer__top-social-links-item-link" href="#">Telegram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="footer__top-social-email">info@miraden.com</a>
+                            <div class="footer__top-social-icons">
+                                <a class="footer__top-social-icon-link footer__top-social-icon-link--facebook" href="#">
+                                </a>
+                                <a class="footer__top-social-icon-link footer__top-social-icon-link--instagram"
+                                    href="#">
+                                </a>
+                                <a class="footer__top-social-icon-link footer__top-social-icon-link--youtube" href="#">
+                                </a>
+                            </div>
+                            <div class="footer__top-social-language">
+                                <a class="footer__top-social-language-link" href="#">language</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bottom-inner">
+                        <div class="footer__bottom-copyright">© 2009-2021 Все права защищены</div>
+                        <a class="footer__bottom-link-policy" href="#">Политика компании по обработке персональных
+                            данных </a>
+                        <a class="footer__bottom-link-confidentiality" href="#">Конфиденциальность</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+    </div>
+</body>
+</html>
